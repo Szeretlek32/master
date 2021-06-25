@@ -87,7 +87,7 @@ $[lifeStyle($[icon][$[brf]]$[txt])]`
 
 ### 每日天气查看
 
-![image-20200107183838878](assets/image-20200107183838878.png.PNG)
+![image-20200107183838878](assets/assets/image-20200107183838878.png.PNG)
 
 #### 对应模板
 
@@ -104,7 +104,7 @@ $[lifeStyle([$[brf]]$[txt])]`
 
 ### 一周天气查看
 
-<img src="assets/image-20200108093853445.png.PNG" alt="image-20200108093853445" style="zoom:67%;" />
+<img src="assets/assets/image-20200108093853445.png.PNG" alt="image-20200108093853445" style="zoom:67%;" />
 
 #### 对应模板
 
@@ -120,7 +120,7 @@ template: {
 
 ### 48小时天气查看
 
-<img src="assets/image-20200108093902427.png.PNG" alt="image-20200108093902427" style="zoom:50%;" />
+<img src="assets/assets/image-20200108093902427.png.PNG" alt="image-20200108093902427" style="zoom:50%;" />
 
 #### 对应模板
 
@@ -134,7 +134,7 @@ template: {
 
 ### 混搭
 
-<img src="assets/image-20200108093910463.png.PNG" alt="image-20200108093910463" style="zoom:50%;" />
+<img src="assets/assets/image-20200108093910463.png.PNG" alt="image-20200108093910463" style="zoom:50%;" />
 
 #### 对应模板
 
