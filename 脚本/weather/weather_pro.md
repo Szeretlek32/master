@@ -87,7 +87,7 @@ $[lifeStyle($[icon][$[brf]]$[txt])]`
 
 ### 每日天气查看
 
-![assets/image-20200107183838878.png.PNG](assets/image-20200107183838878.png.PNG)
+![image-20200107183838878.png.PNG](assets/image-20200107183838878.png.PNG)
 
 #### 对应模板
 
