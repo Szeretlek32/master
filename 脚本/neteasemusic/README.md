@@ -1,21 +1,5 @@
 # 网易云音乐
 
-> 2020.6.15
->
-> 1. 增加自动重试机制 (BoxJs 可调整次数及间隔)
-> 2. 增加等级显示 (需按新方式获取会话)
-
-## 配置 (Surge & Loon)
-
-```properties
-[MITM]
-music.163.com
-
-[Script]
-http-request ^https:\/\/music.163.com\/weapi\/user\/level script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,requires-body=true
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js
-```
-
 ## 配置 （QuanX）
 
 ```properties
@@ -55,20 +39,6 @@ music.163.com
 
    - 很正常，网络问题，哪怕你是手工签到也可能失败（凌晨签到容易拥堵就容易失败）
    - 暂时不考虑代码级的重试机制，但咱有配置级的（暴力美学）：
-
-   - `Surge`配置:
-
-     ```properties
-     # 没有什么是一顿饭解决不了的:
-     cron "10 0 0 * * *" script-path=xxx.js # 每天00:00:10执行一次
-     # 如果有，那就两顿:
-     cron "20 0 0 * * *" script-path=xxx.js # 每天00:00:20执行一次
-     # 实在不行，三顿也能接受:
-     cron "30 0 0 * * *" script-path=xxx.js # 每天00:00:30执行一次
-
-     # 再粗暴点，直接:
-     cron "* */60 * * * *" script-path=xxx.js # 每60分执行一次
-     ```
 
    - `QuanX`配置:
 
