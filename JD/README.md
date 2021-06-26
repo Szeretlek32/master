@@ -46,7 +46,6 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 
 1. 无法写入 Cookie
 
-   - 检查 Surge 系统通知权限放开了没
    - 如果你用的是 Safari, 请尝试在浏览地址栏`手动输入网址`(不要用复制粘贴)
 
 2. 写入 Cookie 成功, 但签到不成功
