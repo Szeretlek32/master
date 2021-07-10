@@ -10,8 +10,8 @@
 wapside.189.cn:9001
 
 [Script]
-http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/10000/10000.cookie.js, requires-body=true
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/10000/10000.js
+http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/10000/10000.cookie.js, requires-body=true
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/10000/10000.js
 ```
 
 ## 配置 (QuanX)
@@ -22,8 +22,7 @@ wapside.189.cn
 
 [rewrite_local]
 # 190及以后版本
-^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-request-body https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/10000/10000.cookie.js
-
+^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-request-body https://raw.githubusercontent.com/Szeretlek32/master/master/JS/10000/10000.cookie.js
 [task_local]
 1 0 * * * 10000.js
 ```
