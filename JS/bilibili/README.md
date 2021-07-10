@@ -15,10 +15,10 @@
 *.bilibili.com
 
 [Script]
-http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/bilibili/bilibili.cookie.js
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/bilibili/bilibili.js
+http-request ^https:\/\/(www|live)\.bilibili\.com\/?.? script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/bilibili/bilibili.cookie.js
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/bilibili/bilibili.js
 # 如需银瓜子转硬币，添加以下内容 
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/bilibili/bilibili.silver2coin.js
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/bilibili/bilibili.silver2coin.js
 ```
 
 ## 配置 (QuanX)
