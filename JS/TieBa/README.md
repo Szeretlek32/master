@@ -17,8 +17,8 @@
 tieba.baidu.com
 
 [Script]
-http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/TieBa/tieba.cookie.js
-cron "10 0 0 * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/TieBa/tieba.js
+http-request ^https?:\/\/tieba\.baidu\.com\/?.? script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/TieBa/tieba.cookie.js
+cron "10 0 0 * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/TieBa/tieba.js
 ```
 
 ## 配置 (QuanX)
