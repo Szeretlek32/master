@@ -7,8 +7,8 @@
 49.234.36.200:9091
 
 [Script]
-Rewrite: feng = type=http-request,pattern=^http:\/\/49.234.36.200:9091\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.cookie.js,requires-body=true
-cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.js
+Rewrite: feng = type=http-request,pattern=^http:\/\/49.234.36.200:9091\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.cookie.js,requires-body=true
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.js
 ```
 
 ## 配置 (QuanX)
@@ -18,10 +18,10 @@ cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/ma
 49.234.36.200:9091
 
 [rewrite_local]
-^http:\/\/49.234.36.200:9091\/v1\/auth\/signin url script-request-body https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.cookie.js
+^http:\/\/49.234.36.200:9091\/v1\/auth\/signin url script-request-body https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.cookie.js
 
 [task_local]
-1 0 * * * https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.js
+1 0 * * * https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.js
 ```
 
 ## 配置 (Loon)
@@ -31,10 +31,10 @@ cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/ma
 49.234.36.200:9091
 
 [rewrite_local]
-http-request ^http:\/\/49.234.36.200:9091\/v1\/auth\/signin script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.cookie.js, requires-body=true, tag=Rewrite: feng
+http-request ^http:\/\/49.234.36.200:9091\/v1\/auth\/signin script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.cookie.js, requires-body=true, tag=Rewrite: feng
 
 [task_local]
-cron "1 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/%E8%84%9A%E6%9C%AC/feng/feng.js
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/Szeretlek32/master/master/JS/feng/feng.js
 ```
 
 ## 说明
