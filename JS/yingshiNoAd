@@ -1,0 +1,10 @@
+#鸭奈飞去广告
+^http?:\/\/pipi\.4kya\.com/\/xgapp\.php\/v3\/advert.position.[^2](?<=position..) url reject
+
+#大师兄去广告
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v3\/top_notice? url reject
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v3\/advert.position.[^2](?<=position..) url reject
+
+[mitm]
+
+hostname = sdk.alibaba.com.ailbaba.me, pipi.4kya.com
