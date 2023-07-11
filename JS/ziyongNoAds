@@ -1,0 +1,28 @@
+#鸭奈飞去广告
+^http?:\/\/pipi\.4kya\.com/\/xgapp\.php\/v3\/advert.position.[^2](?<=position..) url reject
+
+#大师兄去广告
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v3\/top_notice? url reject
+^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v3\/advert.position.[^2](?<=position..) url reject
+
+#555影视去广告
+^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/movie\/index_recommend url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/555Ad.js
+^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}(:\d+)?\/api\/v\d\/advert url reject
+
+#哈弗智家去更新弹窗
+^https?:\/\/gw-app\.beantechyun\.com\/app-api\/api\/v1.0\/complaintsComments url reject-200
+
+#哈弗智家去开屏广告
+^https:\/\/gw-app\.beantechyun\.com\/app-api\/api\/v1\.0\/content\/route\/getContentInfo\?nodeId=haval_globalPG_guideAdvertMDL url reject-dict
+
+#大华云联去更新弹窗
+^https:\/\/smb\.cloud-dahua\.com:443\/gateway\/membership\/appVersion\/getVersion\/12 url reject-dict
+
+# 屏蔽虚拟定位升级弹窗
+^https?:\/\/app\.aa-ab\.com\/home url reject
+
+
+
+[mitm]
+
+hostname = sdk.alibaba.com.ailbaba.me, pipi.4kya.com,*.aa-ab.com,gw-app.beantechyun.com,smb.cloud-dahua.com,run.api.qyfxgd.cn, a.weilai555.com, a.ecoliving168.com
