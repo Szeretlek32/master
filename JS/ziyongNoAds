@@ -1,5 +1,4 @@
-#鸭奈飞去广告
-^http?:\/\/pipi\.4kya\.com/\/xgapp\.php\/v3\/advert.position.[^2](?<=position..) url reject
+
 
 #大师兄去广告
 ^https?:\/\/sdk\.alibaba\.com\.ailbaba\.me\/xgapp\.php\/v3\/top_notice? url reject
@@ -25,4 +24,4 @@
 
 [mitm]
 
-hostname = sdk.alibaba.com.ailbaba.me, pipi.4kya.com,*.aa-ab.com,gw-app.beantechyun.com,smb.cloud-dahua.com,run.api.qyfxgd.cn, a.weilai555.com, a.ecoliving168.com
+hostname = sdk.alibaba.com.ailbaba.me,*.aa-ab.com,gw-app.beantechyun.com,smb.cloud-dahua.com,run.api.qyfxgd.cn, a.weilai555.com, a.ecoliving168.com
